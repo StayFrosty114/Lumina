@@ -14,7 +14,7 @@ public class LampKick : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
-        pushForce = new Vector3(UnityEngine.Random.Range(-0.5f, 0.5f), UnityEngine.Random.Range(0f, 0.5f), UnityEngine.Random.Range(0f, 0.5f));
+        pushForce = new Vector3(UnityEngine.Random.Range(-0.5f, 0.5f), UnityEngine.Random.Range(0f, 0f), UnityEngine.Random.Range(0f, 0.5f));
     }
     void Start()
     {
@@ -23,7 +23,7 @@ public class LampKick : MonoBehaviour
         Debug.Log("Kick the fucker");
         pushing = true;
         StartCoroutine(PushTimer());
-        Invoke("Stop", 5);
+        Invoke("Stop", 10);
     }
 
     private IEnumerator PushTimer()
