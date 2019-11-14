@@ -31,7 +31,7 @@ public class LampKick : MonoBehaviour
         
         while (pushing)
         {
-            Debug.Log(pushing);
+            // Debug.Log(pushing);
             rb.AddForce(pushForce);
             yield return new WaitForEndOfFrame();
         }

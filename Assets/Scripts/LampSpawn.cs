@@ -28,8 +28,8 @@ public class LampSpawn : MonoBehaviour
                 StartCoroutine(CoolTimer());
             }
         }
-        else
-            Debug.Log("Fuck you");
+        // else
+        //    Debug.Log("Fuck you");
     }
 
     private IEnumerator CoolTimer()
