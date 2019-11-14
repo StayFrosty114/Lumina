@@ -48006,7 +48006,7 @@ Transform:
   - {fileID: 9089422122323688279}
   - {fileID: 4765317541245033088}
   m_Father: {fileID: 4651467832531244666}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 5.5800004, y: -12.736001, z: -1.2590001}
 --- !u!198 &9046917664570867193
 ParticleSystem:
@@ -48091,7 +48091,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.25
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -62483,8 +62483,8 @@ Transform:
   m_LocalPosition: {x: 0.9063743, y: 7.0332456, z: -7.382696}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 6176583689364798632}
   - {fileID: 4022423744548808005}
+  - {fileID: 6176583689364798632}
   - {fileID: 7038280194353678619}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -67302,7 +67302,7 @@ Transform:
   - {fileID: 934233402344556784}
   - {fileID: 7266905316947736686}
   m_Father: {fileID: 4651467832531244666}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -12.849001, y: 0, z: 0}
 --- !u!198 &8077761325636332523
 ParticleSystem:
@@ -67327,7 +67327,7 @@ ParticleSystem:
   startDelay:
     serializedVersion: 2
     minMaxState: 0
-    scalar: 0.25
+    scalar: 0.3
     minScalar: 0
     maxCurve:
       serializedVersion: 2
@@ -67387,7 +67387,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.25
+      scalar: 0.1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -101011,7 +101011,12 @@ PrefabInstance:
     - target: {fileID: 2387378199819897729, guid: 6443ba65fc0f1ca42978135d312f8a29,
         type: 3}
       propertyPath: startDelay.scalar
-      value: 0.4
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2387378199819897729, guid: 6443ba65fc0f1ca42978135d312f8a29,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6443ba65fc0f1ca42978135d312f8a29, type: 3}
