@@ -1,9 +1,8 @@
 fileFormatVersion: 2
-guid: 600d6212b59bb40409d19d750b5fd1e9
-timeCreated: 1503305155
-licenseType: Store
+guid: f3595c49d4b27554a9811405f6df2112
 ComputeShaderImporter:
-  currentAPIMask: 131076
+  externalObjects: {}
+  currentAPIMask: 4
   userData: 
   assetBundleName: 
   assetBundleVariant: 
