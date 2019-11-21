@@ -7,14 +7,14 @@ public class LampKick : MonoBehaviour
 {
     private Rigidbody rb;
 
-    private float kickForce = 100f;
+    private float kickForce = 200f;
     private bool pushing = false;
     Vector3 pushForce;
 
     // Start is called before the first frame update
     private void Awake()
     {
-        pushForce = new Vector3(UnityEngine.Random.Range(-0.5f, 0.5f), UnityEngine.Random.Range(0f, 0f), UnityEngine.Random.Range(0f, 0.5f));
+        pushForce = new Vector3(UnityEngine.Random.Range(-0.5f, 0.5f), UnityEngine.Random.Range(0f, 0.5f), UnityEngine.Random.Range(0f, 0.5f));
     }
     void Start()
     {
