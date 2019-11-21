@@ -4740,9 +4740,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
         type: 3}
+      propertyPath: fireworksList.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
+        type: 3}
       propertyPath: fireWorkSpawner
       value: 
       objectReference: {fileID: 5083391356746178756, guid: f494ad609f89db24998826da662a9c51,
+        type: 3}
+    - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
+        type: 3}
+      propertyPath: fireworksList.Array.data[0]
+      value: 
+      objectReference: {fileID: 5083391356746178756, guid: f494ad609f89db24998826da662a9c51,
+        type: 3}
+    - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
+        type: 3}
+      propertyPath: fireworksList.Array.data[1]
+      value: 
+      objectReference: {fileID: 5083391356746178756, guid: c5347a40868eec24287e4e636eaf74ef,
+        type: 3}
+    - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
+        type: 3}
+      propertyPath: fireworksList.Array.data[2]
+      value: 
+      objectReference: {fileID: 5083391356746178756, guid: 8be5fc4c95dff6a47b730ae13fabc87c,
+        type: 3}
+    - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
+        type: 3}
+      propertyPath: fireworksList.Array.data[3]
+      value: 
+      objectReference: {fileID: 5083391356746178756, guid: fac0252beb272fc49a417f7c47e57892,
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80d5c3599a6f8574cbf60d513b2c320f, type: 3}

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyTimer : MonoBehaviour
@@ -7,7 +6,7 @@ public class DestroyTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(FuckYiannisMom());
+        StartCoroutine(Timer());
     }
 
     // Update is called once per frame
@@ -16,7 +15,7 @@ public class DestroyTimer : MonoBehaviour
         
     }
 
-    private IEnumerator FuckYiannisMom()
+    private IEnumerator Timer()
     {
         yield return new WaitForSeconds(2);
         DestroyImmediate(gameObject, true);

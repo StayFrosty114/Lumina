@@ -9,8 +9,8 @@ using Liminal.SDK.VR.Input;
 
 public class ShootLantern : MonoBehaviour
 {
-    [SerializeField]
-    GameObject fireWorkSpawner;
+
+    public List<GameObject> fireworksList = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +52,7 @@ public class ShootLantern : MonoBehaviour
     private void Boom(GameObject lamp)
     {
         Debug.Log("Hit lantern");
-        Instantiate(fireWorkSpawner, lamp.transform.position, lamp.transform.rotation);
+        Instantiate(fireworksList[Random.Range(0, fireworksList.Count)], lamp.transform.position, lamp.transform.rotation);
         DestroyImmediate(lamp, true);
     }
 }
