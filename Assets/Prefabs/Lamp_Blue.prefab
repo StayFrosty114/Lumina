@@ -19445,7 +19445,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.45, y: 0.9, z: 0.45}
+  m_Size: {x: 1.2287928, y: 1.3461393, z: 1.4852425}
   m_Center: {x: 0, y: 0.46, z: 0}
 --- !u!75 &75720717988904632
 ConstantForce:
