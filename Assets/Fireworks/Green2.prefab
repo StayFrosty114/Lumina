@@ -284,7 +284,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.35
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -19438,7 +19438,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.092515126, g: 0.254717, b: 0.15951104, a: 1}
+      maxColor: {r: 0.1804913, g: 0.9811321, b: 0.3469812, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -19500,7 +19500,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.35
+      scalar: 0.7
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -19875,7 +19875,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 5
+    type: 0
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -20190,8 +20190,8 @@ ParticleSystem:
       time: 0
       countCurve:
         serializedVersion: 2
-        minMaxState: 3
-        scalar: 2
+        minMaxState: 0
+        scalar: 3
         minScalar: 1
         maxCurve:
           serializedVersion: 2
@@ -24257,7 +24257,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.3950368, g: 0.5471698, b: 0.10065861, a: 1}
+      maxColor: {r: 0.39108703, g: 0.8301887, b: 0.019579919, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -24319,7 +24319,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.35
+      scalar: 0.5
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -24694,7 +24694,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 5
+    type: 0
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -25010,8 +25010,8 @@ ParticleSystem:
       countCurve:
         serializedVersion: 2
         minMaxState: 3
-        scalar: 2
-        minScalar: 1
+        scalar: 3
+        minScalar: 2
         maxCurve:
           serializedVersion: 2
           m_Curve:
@@ -27866,7 +27866,7 @@ ParticleSystem:
     - serializedVersion: 3
       emitter: {fileID: 3095300833417908954}
       type: 2
-      properties: 2
+      properties: 0
       emitProbability: 1
   LightsModule:
     enabled: 0
