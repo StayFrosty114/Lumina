@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Liminal.SDK.VR;
+using Liminal.SDK.VR.Input;
 
 public class LampSpawn : MonoBehaviour
 {
@@ -8,6 +10,8 @@ public class LampSpawn : MonoBehaviour
     public GameObject lampSpawner;
     public GameObject lamp;
     private bool cooldown = false;
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,10 +21,18 @@ public class LampSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        var vrDevice = VRDevice.Device;
+        if (vrDevice == null)
+            return;
+
+        // Get the primary input device (the controller)
+        var inputDevice = vrDevice.PrimaryInputDevice;
+        if (inputDevice == null)
+            return;
 
         if (cooldown == false)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (inputDevice.GetButtonDown(VRButton.One))
             {
                 Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
                 Debug.Log("Lantern spawned");
@@ -28,8 +40,6 @@ public class LampSpawn : MonoBehaviour
                 StartCoroutine(CoolTimer());
             }
         }
-        // else
-        //    Debug.Log("Fuck you");
     }
 
     private IEnumerator CoolTimer()

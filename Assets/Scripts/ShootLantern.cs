@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
-using Liminal;
 using Liminal.SDK.VR;
-using Liminal.SDK.Input;
 using Liminal.SDK.VR.Input;
 
 public class ShootLantern : MonoBehaviour
@@ -31,7 +27,7 @@ public class ShootLantern : MonoBehaviour
         if (inputDevice == null)
             return;
 
-        if (inputDevice.GetButtonDown(VRButton.One))
+        if (inputDevice.GetButtonDown(VRButton.Trigger))
         {
             Shoot();
         }
@@ -51,7 +47,7 @@ public class ShootLantern : MonoBehaviour
 
     private void Boom(GameObject lamp)
     {
-        Debug.Log("Hit lantern");
+        // Debug.Log("Hit lantern");
         Instantiate(fireworksList[Random.Range(0, fireworksList.Count)], lamp.transform.position, lamp.transform.rotation);
         DestroyImmediate(lamp, true);
     }
