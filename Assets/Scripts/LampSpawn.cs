@@ -32,7 +32,7 @@ public class LampSpawn : MonoBehaviour
 
         if (cooldown == false)
         {
-            if (inputDevice.GetButtonDown(VRButton.One) || Input.GetKeyDown(KeyCode.Space))
+            if (inputDevice.GetButtonDown(VRButton.One))
             {
                 Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
                 Debug.Log("Lantern spawned");

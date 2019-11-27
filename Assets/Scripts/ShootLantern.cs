@@ -27,7 +27,7 @@ public class ShootLantern : MonoBehaviour
         if (inputDevice == null)
             return;
 
-        if (inputDevice.GetButtonDown(VRButton.Trigger))
+        if (inputDevice.GetButtonDown(VRButton.Trigger) || Input.GetKeyDown(KeyCode.Mouse1))
         {
             Shoot();
         }
