@@ -17,7 +17,7 @@ public class DestroyTimer : MonoBehaviour
 
     private IEnumerator Timer()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         DestroyImmediate(gameObject, true);
 
     }

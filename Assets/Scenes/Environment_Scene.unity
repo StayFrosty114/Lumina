@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0077127875, g: 0.029384712, b: 0.06704848, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2492,7 +2492,7 @@ PrefabInstance:
     - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
         type: 3}
       propertyPath: fireworksList.Array.size
-      value: 4
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
         type: 3}
@@ -2535,6 +2535,24 @@ PrefabInstance:
       propertyPath: lampSpawner
       value: 
       objectReference: {fileID: 738065546}
+    - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
+        type: 3}
+      propertyPath: fireworksList.Array.data[4]
+      value: 
+      objectReference: {fileID: 5083391356746178756, guid: 621dff0bddc19bf478d341f6b8d0e344,
+        type: 3}
+    - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
+        type: 3}
+      propertyPath: fireworksList.Array.data[5]
+      value: 
+      objectReference: {fileID: 5083391356746178756, guid: f4ac29c89ed9c8e47abd627a58366822,
+        type: 3}
+    - target: {fileID: 4916234305451631372, guid: 80d5c3599a6f8574cbf60d513b2c320f,
+        type: 3}
+      propertyPath: fireworksList.Array.data[6]
+      value: 
+      objectReference: {fileID: 5083391356746178756, guid: 7f429b236487ff64dabaaa201a63077d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80d5c3599a6f8574cbf60d513b2c320f, type: 3}
 --- !u!4 &241571418 stripped
@@ -10487,7 +10505,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EmulatorDevice: 1
-  m_BuildDevice: 0
+  m_BuildDevice: 2
 --- !u!1001 &531108831
 PrefabInstance:
   m_ObjectHideFlags: 0
