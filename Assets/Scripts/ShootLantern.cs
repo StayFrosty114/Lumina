@@ -10,12 +10,6 @@ public class ShootLantern : MonoBehaviour
     public List<GameObject> fwList = new List<GameObject>();
     private LampKick lampKick;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -31,7 +25,7 @@ public class ShootLantern : MonoBehaviour
             return;
         #endregion
 
-        if (inputDevice.GetButtonDown(VRButton.Trigger) || Input.GetKeyDown(KeyCode.Mouse1))
+        if (inputDevice.GetButtonDown(VRButton.One))
         {
             Shoot();
         }
@@ -47,7 +41,7 @@ public class ShootLantern : MonoBehaviour
             if (hitResult.gameObject.GetComponent<LampKick>())
             {
                 lampKick = hitResult.gameObject.GetComponent<LampKick>();
-                if (lampKick.pushing == false)
+                if (lampKick.shootable == true)
                 {
                     Boom(hitResult.gameObject);
                 }
@@ -59,11 +53,11 @@ public class ShootLantern : MonoBehaviour
     {
         // Debug.Log("Hit lantern");
 
-        if (currentTime < 10)
+        if (currentTime < 20)
         {
             Instantiate(fwList[Random.Range(0, 3)], lamp.transform.position, lamp.transform.rotation);
         }
-        else if (currentTime >= 10 && currentTime < 20)
+        else if (currentTime >= 20 && currentTime < 40)
         {
             Instantiate(fwList[Random.Range(0, 7)], lamp.transform.position, lamp.transform.rotation);
         }

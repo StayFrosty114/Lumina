@@ -10,7 +10,7 @@ public class LampSpawn : MonoBehaviour
     public GameObject lampSpawner;
     public GameObject lamp;
     private bool spawning;
-    
+    private float currentTime;
 
     // Start is called before the first frame update
     void Start()
@@ -22,22 +22,28 @@ public class LampSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var vrDevice = VRDevice.Device;
-        if (vrDevice == null)
-            return;
-
-        // Get the primary input device (the controller)
-        var inputDevice = vrDevice.PrimaryInputDevice;
-        if (inputDevice == null)
-            return;
+        currentTime += Time.deltaTime;
     }
 
     private IEnumerator SpawnLamp()
     {
         while (spawning)
         {
-            Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
-            yield return new WaitForSeconds(2);
+            if (currentTime < 60)
+            {
+                Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
+                yield return new WaitForSeconds(8);
+            }
+            else if (currentTime > 60 && currentTime < 120)
+            {
+                Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
+                yield return new WaitForSeconds(5);
+            }
+            else
+            {
+                Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
+                yield return new WaitForSeconds(2);
+            }
         }
     }
 

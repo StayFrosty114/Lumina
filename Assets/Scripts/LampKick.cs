@@ -7,6 +7,7 @@ public class LampKick : MonoBehaviour
 
     private float kickForce = 250f;
     public bool pushing = false;
+    public bool shootable = false;
     Vector3 pushForce;
 
     // Start is called before the first frame update
@@ -19,8 +20,10 @@ public class LampKick : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.AddForce(UnityEngine.Random.Range(-50f, 50f), UnityEngine.Random.Range(0f, 50f), kickForce);
         // Debug.Log("Kick the fucker");
+        shootable = false;
         pushing = true;
         StartCoroutine(PushTimer());
+        Invoke("Shootable", 5);
         Invoke("Stop", 10);
     }
 
@@ -37,5 +40,10 @@ public class LampKick : MonoBehaviour
     private void Stop()
     {
         pushing = false;
+    }
+
+    private void Shootable()
+    {
+        shootable = true;
     }
 }
