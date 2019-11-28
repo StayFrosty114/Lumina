@@ -9,13 +9,14 @@ public class LampSpawn : MonoBehaviour
 
     public GameObject lampSpawner;
     public GameObject lamp;
-    private bool cooldown = false;
+    private bool spawning;
     
 
     // Start is called before the first frame update
     void Start()
     {
-        cooldown = false;
+        spawning = true;
+        StartCoroutine(SpawnLamp());
     }
 
     // Update is called once per frame
@@ -29,22 +30,15 @@ public class LampSpawn : MonoBehaviour
         var inputDevice = vrDevice.PrimaryInputDevice;
         if (inputDevice == null)
             return;
+    }
 
-        if (cooldown == false)
+    private IEnumerator SpawnLamp()
+    {
+        while (spawning)
         {
-            if (inputDevice.GetButtonDown(VRButton.One))
-            {
-                Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
-                Debug.Log("Lantern spawned");
-                cooldown = true;
-                StartCoroutine(CoolTimer());
-            }
+            Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
+            yield return new WaitForSeconds(2);
         }
     }
 
-    private IEnumerator CoolTimer()
-    {
-        yield return new WaitForSeconds(2);
-        cooldown = false;
-    }
 }
