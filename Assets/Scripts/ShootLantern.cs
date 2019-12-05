@@ -53,11 +53,11 @@ public class ShootLantern : MonoBehaviour
     {
         // Debug.Log("Hit lantern");
 
-        if (currentTime < 20)
+        if (currentTime < 60)
         {
             Instantiate(fwList[Random.Range(0, 3)], lamp.transform.position, lamp.transform.rotation);
         }
-        else if (currentTime >= 20 && currentTime < 40)
+        else if (currentTime >= 60 && currentTime < 120)
         {
             Instantiate(fwList[Random.Range(0, 7)], lamp.transform.position, lamp.transform.rotation);
         }
