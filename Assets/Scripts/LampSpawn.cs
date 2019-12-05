@@ -6,6 +6,7 @@ public class LampSpawn : MonoBehaviour
 
     public GameObject lampSpawner;
     public GameObject lamp;
+    public GameObject[] colouredLanterns = new GameObject[6];
     private bool spawning;
     private float currentTime;
 
@@ -29,16 +30,19 @@ public class LampSpawn : MonoBehaviour
             if (currentTime < 60)
             {
                 Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
+                lamp = colouredLanterns[Random.Range(0, colouredLanterns.Length)];
                 yield return new WaitForSeconds(8);
             }
             else if (currentTime > 60 && currentTime < 120)
             {
                 Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
+                lamp = colouredLanterns[Random.Range(0, colouredLanterns.Length)];
                 yield return new WaitForSeconds(5);
             }
             else
             {
                 Instantiate(lamp, lampSpawner.transform.position, lampSpawner.transform.rotation);
+                lamp = colouredLanterns[Random.Range(0, colouredLanterns.Length)];
                 yield return new WaitForSeconds(2);
             }
         }

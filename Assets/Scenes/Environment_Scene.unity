@@ -11834,6 +11834,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lampSpawner: {fileID: 738065546}
   lamp: {fileID: 1708864875986798, guid: 9f310eafcf318a444935e8cd2333d641, type: 3}
+  colouredLanterns:
+  - {fileID: 1708864875986798, guid: 9f310eafcf318a444935e8cd2333d641, type: 3}
+  - {fileID: 1708864875986798, guid: 8f40bf91271ab2a47941d56cf0611269, type: 3}
+  - {fileID: 1708864875986798, guid: e0b56bdd6feabd24296c5847a0e6a4f4, type: 3}
+  - {fileID: 1708864875986798, guid: 6c67ab64bd6ce6e459bc00d39db3fcc8, type: 3}
+  - {fileID: 1708864875986798, guid: 6f23486b27abd7245a3fc35a2f7c23ef, type: 3}
+  - {fileID: 1708864875986798, guid: 05832f86ce29d4d47ac8d243c36248bb, type: 3}
 --- !u!4 &738065548
 Transform:
   m_ObjectHideFlags: 0
