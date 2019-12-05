@@ -1,8 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Liminal.SDK.VR;
-using Liminal.SDK.VR.Input;
 
 public class LampSpawn : MonoBehaviour
 {

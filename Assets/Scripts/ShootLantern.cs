@@ -8,7 +8,7 @@ public class ShootLantern : MonoBehaviour
     private bool playing;
     private float currentTime;
     public List<GameObject> fwList = new List<GameObject>();
-    private LampKick lampKick;
+    private LampKick lampKick; 
 
     // Update is called once per frame
     void Update()
@@ -63,7 +63,7 @@ public class ShootLantern : MonoBehaviour
         }
         else
         {
-            Instantiate(fwList[Random.Range(0, fwList.Count)], lamp.transform.position, lamp.transform.rotation);
+            Instantiate(fwList[Random.Range(4, fwList.Count)], lamp.transform.position, lamp.transform.rotation);
         }
         DestroyImmediate(lamp, true);
     }
