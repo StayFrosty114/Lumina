@@ -11,7 +11,7 @@ Material:
   m_Shader: {fileID: 4800000, guid: 7803d3a1672789c46805da3ea272d3e6, type: 3}
   m_ShaderKeywords: EFFECT_BUMP GEOM_TYPE_LEAF _ALPHATEST_ON _NORMALMAP
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -99,9 +99,9 @@ Material:
     - _SquashAmount: 1
     - _SrcBlend: 1
     - _UVSec: 0
-    - _WaveFreq: 20
-    - _WaveHeight: 0.1
-    - _WaveScale: 1
+    - _WaveFreq: 0
+    - _WaveHeight: 0
+    - _WaveScale: 0
     - _WindQuality: 1
     - _ZWrite: 1
     m_Colors:
